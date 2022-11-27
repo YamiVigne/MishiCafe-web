@@ -1,0 +1,14 @@
+.card {
+  background-color: white;
+  padding: 12px; }
+  .card .title {
+    color: aqua;
+    font-size: 30px; }
+  .card:hover {
+    background-color: peachpuff; }
+  .card:active {
+    background-color: aqua; }
+
+body {
+  background-image: linear-gradient(#fff, #dda684);
+  background-repeat: no-repeat; }

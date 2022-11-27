@@ -1,0 +1,15 @@
+.card {
+    background-color: white;
+    padding: 12px;
+    
+    .title{
+        color:aqua;
+        font-size: 30px;
+    }
+    &:hover{
+    background-color: peachpuff;
+    }
+    &:active{
+        background-color: aqua;
+    }
+}
