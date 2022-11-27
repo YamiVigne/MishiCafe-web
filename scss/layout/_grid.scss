@@ -1,0 +1,143 @@
+.container-grid {
+    max-width: 1366px;
+    display: grid;
+    margin: 25px auto;
+    grid-template-areas:
+        "redes logo petfriendly"
+        "navbar navbar navbar"
+        "carrousel carrousel carrousel"
+        "widget-1 main-content widget-2"
+        "widget-1 main-content widget-2"
+        "footer footer footer";
+    grid-template-rows: auto auto auto;
+    grid-template-columns: 20% auto 20%;
+    gap: 20px;
+    padding: 5px;
+    justify-content: center;
+    .redes {
+        grid-area: redes;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: 'EB Garamond', serif;
+        color: #594c7f;
+        font-size: 18px;
+        letter-spacing: 3pt;
+    }
+    .navbar {
+        max-height: 70px;
+        grid-area: navbar;
+        text-align: center;
+        display: flex;
+        align-items: initial;
+        justify-content: center;
+        font-family: 'EB Garamond', serif;
+        text-transform: uppercase;
+        letter-spacing: 3pt;
+    }
+    .widget-1 {
+        grid-area: widget-1;
+        font-family: "trebuchet MS", sans-serif;
+        font-size: 12px;
+        letter-spacing: 2pt;
+        word-spacing: 0.3pt;
+        line-height: 1.4;
+        padding: 5px;
+        padding: 45px;
+    }
+    .widget-2 {
+        grid-area: widget-2;
+        font-family: "trebuchet MS", sans-serif;
+        font-size: 12px;
+        letter-spacing: 2pt;
+        word-spacing: 0.3pt;
+        line-height: 1.4;
+        padding: 45px;
+    }
+    .footer {
+        grid-area: footer;
+        color: #a0423f;
+        text-align: center;
+        justify-content: center;
+        font-family: "trebuchet MS", sans-serif;
+        text-transform: uppercase;
+        font-size: 18px;
+        letter-spacing: 2pt;
+        line-height: 1.2;
+    }
+        ul {
+            margin: 0;
+            padding: 0 10px;
+            list-style: none;
+            padding-right: 10px;
+        }
+            li {
+                display: inline-block;
+                line-height: 25px;
+                font-size: 18px;  
+                font-style: italic;
+                font-family: 'trebuchet MS', sans-serif;;
+                }
+                a {
+                    display: block;
+                    padding: 0 50px;
+                    text-decoration: none;
+                }
+                    a:hover {
+                        background: $tertiary_color;
+                    }
+    }
+
+$vista: mobile;
+	@if $vista == mobile {
+		@media only screen and (max-width:768px) {
+.container-grid {
+        display: grid;
+        grid-template-areas:    "logo logo logo"
+                                "carrousel carrousel carrousel"
+                                "navbar navbar navbar" 
+                                "main-content main-content main-content"
+                                "widget-1 widget-1 widget-1"
+                                "widget-2 widget-2 widget-2"
+                                "petfriendly petfriendly petfriendly"
+                                "footer footer footer";
+        }
+        .widget-1 
+        .widget-2 {
+            align-content:space-between;
+        } 
+        
+.navbar {
+            text-align: center;
+        }
+         ul {
+            margin: 0;
+            padding: 0 50px;
+            list-style: none;
+            padding-right: 10px;
+        }
+            li {
+                display: inline-block;
+                line-height: 28px;
+                font-size: 18px;  
+                font-style: italic;
+                font-family: 'trebuchet MS', sans-serif;;
+                text-transform: uppercase;
+            }
+                a {
+            display: block;
+            padding: 0 50px;
+            text-decoration: none;
+            }
+        
+                a:hover {
+                background: #eea28f;
+            }
+        
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    }
+}

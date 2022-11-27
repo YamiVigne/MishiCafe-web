@@ -2,3 +2,41 @@ body {
     background-image: linear-gradient( $white, $primary_color);
     background-repeat: no-repeat;
 }
+
+.container-grid {
+    .logo {
+        grid-area: logo;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .petfriendly {
+        grid-area: petfriendly;
+        text-align: center;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+        font-family: 'EB Garamond', serif;
+        text-transform: uppercase;
+        color: #cc706d;
+        font-size: 18px;
+        letter-spacing: 3pt;
+        padding: 45px;
+    }
+    .carrousel {
+        grid-area: carrousel;
+    }
+    .main-content {
+        grid-area: main-content;
+        background: #ffffff34;
+        box-shadow: #81305641 1px 1px 5px;
+        border-radius: 25px;
+        text-align: center;
+        font-family: "trebuchet MS", sans-serif;
+        font-size: 12px;
+        letter-spacing: 2pt;
+        word-spacing: 0.3pt;
+        line-height: 1.4;
+        padding: 45px;
+    }
+}

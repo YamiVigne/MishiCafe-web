@@ -1,0 +1,64 @@
+
+h1 {
+	color: $secondary_color;
+	font-family: $typo-titles;
+	font-size: $typo-big;
+	text-transform: uppercase;
+}
+h2 {
+	color: $dark;
+	font-family: $typo-titles;
+	text-align: center;
+	font-size: $typo-medium;
+}
+h3 {
+	color: $secondary_color;
+	font-family: $typo-titles;
+	font-size: $typo-medium;
+	letter-spacing: 1.5pt;
+}
+h4 {
+	font-family: $typo-titles;
+	color: $secondary_color;
+	letter-spacing: 1.5pt;
+	text-align: start;
+	font-size: $typo-medium;
+}
+h5 {
+	color: $dark;
+	text-align: center;
+	font-family: $typo-general;
+}
+h6 {
+	font-family: $typo-general;
+	text-transform: uppercase;
+	letter-spacing: 3pt;
+	text-align: start;
+	font-size: 22px;
+}
+
+$vista: mobile;
+body{
+	@if $vista == mobile {
+		@media only screen and (max-width:768px) {
+		background-image: linear-gradient( $white, $quarter_color);            
+		background-repeat: no-repeat;
+			p {
+				font-size: 14px;
+			}
+		}
+	}
+	}@if $vista ==tablet {
+		@media only screen and (min-width: 769px) {
+			p {
+				font-size: 20px;
+			}
+		}
+	} @else {
+		@media only screen and (min-width: 992px) {
+			p {
+				font-size: 20px;
+			}
+		}
+}
+
