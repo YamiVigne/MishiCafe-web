@@ -41,7 +41,7 @@ $vista: mobile;
 body{
 	@if $vista == mobile {
 		@media only screen and (max-width:768px) {
-		background-image: linear-gradient( $white, $quarter_color);            
+		background-image: linear-gradient( $white, $tertiary_color);            
 		background-repeat: no-repeat;
 			p {
 				font-size: 14px;
