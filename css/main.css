@@ -7,12 +7,11 @@
   display: flex;
   flex-wrap: wrap;
   list-style: none;
-  margin: 0;
-  padding: 0; }
-
-.cards_item {
-  display: flex;
-  padding: 16px; }
+  margin: 10px;
+  padding: 0px; }
+  .cards .cards_item {
+    display: flex;
+    padding: 16px; }
 
 @media (min-width: 640px) {
   .cards_item {
@@ -23,31 +22,28 @@
     width: 100%; } }
 
 .card {
-  background-color: white;
+  background: linear-gradient(to bottom left, #c25f5b 40%, #da8aa7 100%);
   border-radius: 5px;
   box-shadow: 6px 8px 2px 1px rgba(59, 21, 21, 0.336);
   display: flex;
   flex-direction: column;
   overflow: hidden; }
-
-.card_content {
-  padding: 16px;
-  background: linear-gradient(to bottom left, #a0423f 40%, #dda684 100%); }
-
-.card_title {
-  font-family: "EB Garamond", serif;
-  color: #000;
-  font-size: 28pt;
-  letter-spacing: 2px;
-  margin: 0px; }
-
-.card_text {
-  color: #fff;
-  font-size: 12pt;
-  line-height: 1.5;
-  margin-bottom: 20px;
-  text-shadow: 1px 1px 2px #000;
-  font-weight: 400; }
+  .card .card_content {
+    padding: 16px;
+    background: linear-gradient(to bottom left, #a0423f 40%, #dda684 100%); }
+  .card .card_title {
+    font-family: "EB Garamond", serif;
+    color: #000;
+    font-size: 28pt;
+    letter-spacing: 2px;
+    margin: 0px; }
+  .card .card_text {
+    color: #fff;
+    font-size: 12pt;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 2px #000;
+    font-weight: 400; }
 
 @media only screen and (max-width: 768px) {
   .card_content {
@@ -124,7 +120,7 @@
     font-family: 'trebuchet MS', sans-serif; }
   .container-grid a {
     display: block;
-    padding: 0 50px;
+    padding: 0px;
     text-decoration: none; }
   .container-grid a:hover {
     background: #d3809e; }
@@ -133,32 +129,33 @@
   .container-grid {
     display: grid;
     grid-template-areas: "logo logo logo" "carrousel carrousel carrousel" "navbar navbar navbar"  "main-content main-content main-content" "widget-1 widget-1 widget-1" "widget-2 widget-2 widget-2" "petfriendly petfriendly petfriendly" "footer footer footer"; }
-  .widget-1
+    .container-grid .navbar {
+      flex-wrap: nowrap;
+      text-align: inherit; }
+    .container-grid ul {
+      margin: 20px;
+      padding: 0px;
+      list-style: none;
+      padding-right: 10px; }
+    .container-grid li {
+      display: inline-block;
+      line-height: 20px;
+      font-size: 15px;
+      font-style: italic;
+      font-family: 'trebuchet MS', sans-serif;
+      text-transform: uppercase; }
+    .container-grid a {
+      display: block;
+      padding: 0px;
+      text-decoration: none; }
+    .container-grid a:hover {
+      background: #eea28f; }
+    .container-grid img {
+      max-width: 100%;
+      height: auto; }
+    .container-grid .widget-1
 .widget-2 {
-    align-content: space-between; }
-  .navbar {
-    text-align: center; }
-  ul {
-    margin: 0;
-    padding: 0 50px;
-    list-style: none;
-    padding-right: 10px; }
-  li {
-    display: inline-block;
-    line-height: 28px;
-    font-size: 18px;
-    font-style: italic;
-    font-family: 'trebuchet MS', sans-serif;
-    text-transform: uppercase; }
-  a {
-    display: block;
-    padding: 0 50px;
-    text-decoration: none; }
-  a:hover {
-    background: #eea28f; }
-  img {
-    max-width: 100%;
-    height: auto; } }
+      align-content: space-between; } }
 
 body {
   background-image: linear-gradient(#fff, #dda684);
