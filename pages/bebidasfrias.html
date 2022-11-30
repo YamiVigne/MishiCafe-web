@@ -6,12 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/main.css">
+    
+    <!-- / keywords -->
+    <meta name="description" content="Cafe de Especialidad petfriendly">
+    <meta name="keywords"  content="cafe, cafeteria, postres, meriendas, bebidas, petfriendly">
+
     <!-- / bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
         crossorigin="anonymous"></script>
+
     <!-- / font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -29,40 +35,50 @@
         <div class="logo"> <img src="../images/Logo.png" alt="Logo">
         </div>
         <div class="petfriendly">  
-            <a href="./petfriendly.html"><img src="../images/Garrita.png" class="animate__animated animate__bounce" alt="Garrita"></a> 
+            <a href="./petfriendly.html"><img src="../images/Garrita.png" title="Petfriendly" class="animate__animated animate__bounce" alt="Garrita"></a> 
             <br> PETFRIENDLY 
         </div>
 
         <!-- / barra navegación -->
         <div class="navbar"> 
-            <nav class="navbar navbar-expand-lg bg-none">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="#"> ☕💖🐈 </a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                            <ul class="navbar-nav">
-                                <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="../index.html">INICIO</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="./meriendas.html">MERIENDA & BEBIDAS</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="./postres.html">POSTRES</a>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="./sintacc.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                        EXTRA
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="./sintacc.html">SIN TACC</a></li>
-                                        <li><a class="dropdown-item" href="#">VEGANO</a></li>
-                                </li>
-                            </ul>
-                        </div>
-                </div>
+          <nav class="navbar navbar-expand-lg bg-none">
+              <div class="container-fluid">
+                  <a class="navbar-brand" aria-current="page" title="Inicio" href="../index.html"> ☕💖🐈 </a>
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                          <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                          <ul class="navbar-nav">
+                              <li class="nav-item">
+                                  <a class="nav-link" title="Merienda" href="./meriendas.html">MERIENDA</a>
+                              </li>
+                              <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" title="Bebidas" href="./pages/sintacc.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                BEBIDAS
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="./bebidascalientes.html">BEBIDAS CALIENTES</a></li>
+                                    <li><a class="dropdown-item" href="./bebidasfrias.html">BEBIDAS FRIAS</a></li>
+                                </ul>
+                            </li>
+                              <li class="nav-item">
+                                  <a class="nav-link" title="Postres" href="./postres.html">POSTRES</a>
+                              </li>
+                              <li class="nav-item dropdown">
+                                  <a class="nav-link dropdown-toggle" title="Extra" href="./sintacc.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                  EXTRA
+                                  </a>
+                                  <ul class="dropdown-menu">
+                                      <li><a class="dropdown-item" href="./sintacc.html">SIN TACC</a></li>
+                                      <li><a class="dropdown-item" href="#">VEGANO</a></li>
+                                  </ul>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" title="Contacto" href="./contacto.html">CONTACTO</a>
+                            </li>
+                          </ul>
+                      </div>
+              </div>
             </nav>
         </div>
         <!-- / carrousel -->
@@ -108,39 +124,73 @@
    <!-- / contenido -->
    <div class="main-content">
        <br>
-       <p><h5> MERIENDAS </h5>
-       <br> Contamos con una variedad enorme de café y temtempie para que puedas disfrutar</p>
-       <p> <h6> CAFÉ </h6>
-          <ul class="cafe"  >
-             <li> EXPRESSO </li>
-             <li> LUNGO </li>
-             <li> DOPPIO </li>
-             <li> DOPPIO LUNGO </li>
-             <li> AMERICANO </li>
-             <li> MACHIATTO </li>
-             <li> MACHIATTO DOPPIO </li>
-             <li> LATTE</li>
-             <li> VANILLA LATTE</li>
-             <li> MATCHA LATTE</li>
-             <li> CORTADO</li>
-             <li> CAPPUCCINO</li>
-             <li> CAPPUCCINO ALMENDRAS </li>
-             <li> MOKA </li>
-             <li> CHOCOLATE</li>
-          </ul>
-          <br><br>
-       <p> <h6> CAFÉ FRIO</h6>
-          <ul class="cafe"  >
-             <li> ICE FLAT WHITE </li>
-             <li> ICE LATTE </li>
-             <li> ICE LATTE ALMENDRAS </li>
-             <li> ICE AMERICANO </li>
-             <li> EXPRESSO TONIC </li>
-             <li> ROUGE GLACE </li>
-          </ul>
-          <br><br>
-     </div>
-     <br>
+       <p><h5> 🍹 𝐁𝐞𝐛𝐢𝐝𝐚𝐬 𝐅𝐫𝐢𝐚𝐬  </h5>
+       <br> Contamos con una variedad enorme de bebidas y temtempie para que puedas disfrutar</p>
+       <div class="row row-cols-1 row-cols-md-2 g-4.5">
+         <div class="col">
+           <div class="card h-100">
+             <img src="../images/cocktail.jpg" class="card-img-top" alt="...">
+             <div class="card-body">
+               <h5 class="card_title">Licuados </h5>
+               <p class="card_text"> 🍍Ananá 🍑Durazno 🍌Banana 🍓Frutilla 🍎Multifruta </p>
+             </div>
+             <div class="card-footer">
+               <small class="text-muted"> $400 </small>
+             </div>
+           </div>
+         </div>
+         <div class="col">
+           <div class="card h-100">
+             <img src="../images/lime.jpg" class="card-img-top" alt="...">
+             <div class="card-body">
+               <h5 class="card_title"> Limonadas </h5>
+               <p class="card_text"> 🍃 Menta & Jengible 🍒 Frutos Rojos 🍊 Maracuyá </p>
+             </div>
+             <div class="card-footer">
+               <small class="text-muted"> $350 </small>
+             </div>
+           </div>
+         </div>
+         <div class="col">
+           <div class="card h-100">
+             <img src="../images/coca.jpg" class="card-img-top" alt="...">
+             <div class="card-body">
+               <h5 class="card_title"> Aguas & Gaseosas </h5>
+               <p class="card_text"> Gaseosa 💧 Agua Saborizada 💦 Speed</p>
+             </div>
+             <div class="card-footer">
+               <small class="text-muted"> $350 </small>
+             </div>
+           </div>            
+         </div>
+         <div class="col">
+           <div class="card h-100">
+             <img src="../images/water.jpg" class="card-img-top" alt="...">
+             <div class="card-body">
+               <h5 class="card_title">Agua</h5>
+               <p class="card_text"> Con gas & sin gas </p>
+             </div>
+             <div class="card-footer">
+               <small class="text-muted"> $200 </small>
+             </div>
+           </div>            
+         </div>
+         <div class="col">
+          <div class="card h-100">
+            <img src="../images/milkshake1.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card_title">Milkshake</h5>
+              <p class="card_text"> 🍰 Vainilla 🍌Banana 🍓Frutilla 🍫 Chocolate </p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted"> $200 </small>
+            </div>
+          </div>            
+        </div>
+       </div>
+         <br><br>
+    </div>
+    <br>
 
  <div class="widget-2"> <b><h5> TORTAS </h5></b>  
      <div data-aos="fade-left"> <img src="../images/images5.png" alt=""></div>
