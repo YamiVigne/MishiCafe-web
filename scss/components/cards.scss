@@ -3,13 +3,12 @@
     display: flex;
     flex-wrap: wrap;
     list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .cards_item {
-    display: flex;
-    padding: 16px;
+    margin: 10px;
+    padding: 0px;
+    .cards_item {
+      display: flex;
+      padding: 16px;
+    }
   }
   
   @media (min-width: 640px) {
@@ -25,36 +24,32 @@
   }
   
   .card {
-    background-color: white;
+    background: linear-gradient(to bottom left, #c25f5b 40%, #da8aa7 100%);;
     border-radius: 5px;
     box-shadow: 6px 8px 2px 1px rgba(59, 21, 21, 0.336);
     display: flex;
     flex-direction: column;
     overflow: hidden;
+    .card_content {
+      padding: 16px;
+      background: linear-gradient(to bottom left, #a0423f 40%, #dda684 100%);
+    }
+      .card_title {
+        font-family: $typo-titles;
+        color: $dark;
+        font-size: $typo-big;
+        letter-spacing: 2px;
+        margin: 0px;
+      }
+        .card_text {
+        color: $white;
+        font-size: $typo-small;
+        line-height: 1.5;
+        margin-bottom: 20px;    
+        text-shadow: 1px 1px 2px $dark;
+        font-weight: 400;
+        }  
   }
-  
-  .card_content {
-    padding: 16px;
-    background: linear-gradient(to bottom left, #a0423f 40%, #dda684 100%);
-  }
-  
-  .card_title {
-    font-family: $typo-titles;
-    color: $dark;
-    font-size: $typo-big;
-    letter-spacing: 2px;
-    margin: 0px;
-  }
-  
-  .card_text {
-    color: $white;
-    font-size: $typo-small;
-    line-height: 1.5;
-    margin-bottom: 20px;    
-    text-shadow: 1px 1px 2px $dark;
-    font-weight: 400;
-  }
-
 $vista: mobile;
 .card_content {
     @if $vista == mobile {

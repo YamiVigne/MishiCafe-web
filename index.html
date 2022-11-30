@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/main.css">
 
+    <!-- / keywords -->
+    <meta name="description" content="Cafe de Especialidad petfriendly">
+    <meta name="keywords"  content="cafe, cafeteria, postres, meriendas, bebidas, petfriendly">
+
     <!-- / bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
@@ -39,23 +43,29 @@
         <div class="navbar"> 
             <nav class="navbar navbar-expand-lg bg-none">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="#"> ☕💖🐈 </a>
+                    <a class="navbar-brand" title="Inicio" aria-current="page" href="#"> ☕💖🐈 </a>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
                         <div class="collapse navbar-collapse" id="navbarNavDropdown">
                             <ul class="navbar-nav">
                                 <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="#">INICIO</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="./pages/meriendas.html">MERIENDA & BEBIDAS</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="./pages/postres.html">POSTRES</a>
+                                    <a class="nav-link" title="Merienda" href="./pages/meriendas.html">MERIENDA</a>
                                 </li>
                                 <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="./pages/sintacc.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                  <a class="nav-link dropdown-toggle" href="./pages/sintacc.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                  BEBIDAS
+                                  </a>
+                                  <ul class="dropdown-menu">
+                                      <li><a class="dropdown-item" href="./pages/bebidascalientes.html">BEBIDAS CALIENTES</a></li>
+                                      <li><a class="dropdown-item" href="./pages/bebidasfrias.html">BEBIDAS FRIAS</a></li>
+                                  </ul>
+                              </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" title="Postres" href="./pages/postres.html">POSTRES</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" title="Extra" href="./pages/sintacc.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     EXTRA
                                     </a>
                                     <ul class="dropdown-menu">
@@ -63,11 +73,13 @@
                                         <li><a class="dropdown-item" href="#">VEGANO</a></li>
                                     </ul>
                                 </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" title="Contacto" href="./pages/contacto.html">CONTACTO</a>
+                              </li>
                             </ul>
                         </div>
                 </div>
             </nav>
-            
         </div>
 
         <!-- / carrousel -->
