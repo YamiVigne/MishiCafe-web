@@ -1,7 +1,8 @@
 body {
     background-image: linear-gradient( $white, $primary_color);
     background-repeat: no-repeat;
-}
+    overflow-x: hidden;
+}   
 
 .container-grid {
     .logo {

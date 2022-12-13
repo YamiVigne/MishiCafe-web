@@ -140,6 +140,7 @@
     .container-grid li {
       display: inline-block;
       line-height: 20px;
+      text-align: center;
       font-size: 15px;
       font-style: italic;
       font-family: 'trebuchet MS', sans-serif;
@@ -159,7 +160,8 @@
 
 body {
   background-image: linear-gradient(#fff, #dda684);
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  overflow-x: hidden; }
 
 .container-grid .logo {
   grid-area: logo;
