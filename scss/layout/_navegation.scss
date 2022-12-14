@@ -1,0 +1,18 @@
+.barraHeader {
+    display:block;
+    height: 6px;
+}
+    
+.coloresHeader {
+    background: #a0423f -webkit-gradient(linear,left top,right top,from(#dda684),color-stop(#772712),color-stop(#fd8d32),color-stop(#dda684),to(#d3809e));
+    background: #a0423f -webkit-linear-gradient(left,#d3809e,#772712,#fd8d32,#dda684,#d3809e);
+    background: #a0423f linear-gradient(to right,#d3809e,#772712,#fd8d32,#dda684,#d3809e);
+    background-size: 500%;
+    -webkit-animation: 4s linear infinite LoadingBarProgress,.8s ease-out LoadingBarEnter;
+    animation: 4s linear infinite LoadingBarProgress,.8s ease-out LoadingBarEnter;
+    -webkit-transform-origin: left;
+    transform-origin: left;
+    width: 100%;
+  }
+  
+@-webkit-keyframes LoadingBarProgress{0%{background-position:0% 0}to{background-position:125% 0}}@keyframes LoadingBarProgress{0%{background-position:0% 0}to{background-position:125% 0}}@-webkit-keyframes LoadingBarEnter{0%{-webkit-transform:scaleX(0);transform:scaleX(0)}to{-webkit-transform:scaleX(1);transform:scaleX(1)}}@keyframes LoadingBarEnter{0%{-webkit-transform:scaleX(0);transform:scaleX(0)}to{-webkit-transform:scaleX(1);transform:scaleX(1)}}._it4vx{height:3px;background:#27c4f5 -webkit-gradient(linear,left top,right top,from(#27c4f5),color-stop(#a307ba),color-stop(#fd8d32),color-stop(#70c050),to(#27c4f5));background:#27c4f5 -webkit-linear-gradient(left,#27c4f5,#a307ba,#fd8d32,#70c050,#27c4f5);background:#27c4f5 linear-gradient(to right,#27c4f5,#a307ba,#fd8d32,#70c050,#27c4f5);background-size:500%;-webkit-animation:4s linear infinite LoadingBarProgress,.8s ease-out LoadingBarEnter;animation:4s linear infinite LoadingBarProgress,.8s ease-out LoadingBarEnter;-webkit-transform-origin:left;transform-origin:left;width:100%}

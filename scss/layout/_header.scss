@@ -26,6 +26,7 @@ body {
     }
     .carrousel {
         grid-area: carrousel;
+        box-shadow: #81305641 5px 5px 10px;
     }
     .main-content {
         grid-area: main-content;
@@ -41,3 +42,36 @@ body {
         padding: 45px;
     }
 }
+
+.page-overflow.refurbished{
+    padding-top: 15px;
+    padding-bottom: 30px;
+  }
+  .refurbished .post-l,
+  .refurbished .post-r{
+    padding: 30px;
+    border: 10px solid #fff;
+  }
+  
+  .refurbished .post-l{
+    background:#a0423f
+  }
+  .refurbished .post-r{
+    background:#772712;
+  }
+  .refurbished img{
+    display:inline-block;
+    width: 100%;
+    margin:0 10px 0 0;
+    border: 5px solid #fff;
+
+  }
+  .refurbished h1{
+    font-size:28px;
+    margin:0 0 30px;
+    color:#fff
+  }
+  .refurbished p{
+    font-size:16px;
+    color:#fff;
+  }

@@ -99,7 +99,7 @@
     padding: 45px; }
   .container-grid .footer {
     grid-area: footer;
-    color: #a0423f;
+    background-color: #ffffff4f;
     text-align: center;
     justify-content: center;
     font-family: "trebuchet MS", sans-serif;
@@ -183,7 +183,8 @@ body {
   padding: 45px; }
 
 .container-grid .carrousel {
-  grid-area: carrousel; }
+  grid-area: carrousel;
+  box-shadow: #81305641 5px 5px 10px; }
 
 .container-grid .main-content {
   grid-area: main-content;
@@ -198,11 +199,95 @@ body {
   line-height: 1.4;
   padding: 45px; }
 
+.page-overflow.refurbished {
+  padding-top: 15px;
+  padding-bottom: 30px; }
+
+.refurbished .post-l,
+.refurbished .post-r {
+  padding: 30px;
+  border: 10px solid #fff; }
+
+.refurbished .post-l {
+  background: #a0423f; }
+
+.refurbished .post-r {
+  background: #772712; }
+
+.refurbished img {
+  display: inline-block;
+  width: 100%;
+  margin: 0 10px 0 0;
+  border: 5px solid #fff; }
+
+.refurbished h1 {
+  font-size: 28px;
+  margin: 0 0 30px;
+  color: #fff; }
+
+.refurbished p {
+  font-size: 16px;
+  color: #fff; }
+
+.barraHeader {
+  display: block;
+  height: 6px; }
+
+.coloresHeader {
+  background: #a0423f -webkit-gradient(linear, left top, right top, from(#dda684), color-stop(#772712), color-stop(#fd8d32), color-stop(#dda684), to(#d3809e));
+  background: #a0423f -webkit-linear-gradient(left, #d3809e, #772712, #fd8d32, #dda684, #d3809e);
+  background: #a0423f linear-gradient(to right, #d3809e, #772712, #fd8d32, #dda684, #d3809e);
+  background-size: 500%;
+  -webkit-animation: 4s linear infinite LoadingBarProgress,.8s ease-out LoadingBarEnter;
+  animation: 4s linear infinite LoadingBarProgress,.8s ease-out LoadingBarEnter;
+  -webkit-transform-origin: left;
+  transform-origin: left;
+  width: 100%; }
+
+@-webkit-keyframes LoadingBarProgress {
+  0% {
+    background-position: 0% 0; }
+  to {
+    background-position: 125% 0; } }
+
+@keyframes LoadingBarProgress {
+  0% {
+    background-position: 0% 0; }
+  to {
+    background-position: 125% 0; } }
+
+@-webkit-keyframes LoadingBarEnter {
+  0% {
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0); }
+  to {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1); } }
+
+@keyframes LoadingBarEnter {
+  0% {
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0); }
+  to {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1); } }
+
+._it4vx {
+  height: 3px;
+  background: #27c4f5 -webkit-gradient(linear, left top, right top, from(#27c4f5), color-stop(#a307ba), color-stop(#fd8d32), color-stop(#70c050), to(#27c4f5));
+  background: #27c4f5 -webkit-linear-gradient(left, #27c4f5, #a307ba, #fd8d32, #70c050, #27c4f5);
+  background: #27c4f5 linear-gradient(to right, #27c4f5, #a307ba, #fd8d32, #70c050, #27c4f5);
+  background-size: 500%;
+  -webkit-animation: 4s linear infinite LoadingBarProgress,.8s ease-out LoadingBarEnter;
+  animation: 4s linear infinite LoadingBarProgress,.8s ease-out LoadingBarEnter;
+  -webkit-transform-origin: left;
+  transform-origin: left;
+  width: 100%; }
+
 h1 {
   color: #a0423f;
   font-family: "EB Garamond", serif;
-  font-size: 28pt;
-  text-transform: uppercase; }
+  font-size: 28pt; }
 
 h2 {
   color: #000;
