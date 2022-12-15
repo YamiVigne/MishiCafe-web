@@ -64,7 +64,6 @@
   grid-template-rows: auto auto auto;
   grid-template-columns: 20% auto 20%;
   gap: 20px;
-  padding: 5px;
   justify-content: center; }
   .container-grid .redes {
     grid-area: redes;
