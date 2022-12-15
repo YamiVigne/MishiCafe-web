@@ -1,6 +1,6 @@
 .container-grid {
     display: grid;
-    margin: 25px auto;
+    margin: 15px auto;
     grid-template-areas:
         "redes logo petfriendly"
         "navbar navbar navbar"
@@ -10,8 +10,9 @@
         "footer footer footer";
     grid-template-rows: auto auto auto;
     grid-template-columns: 20% auto 20%;
-    gap: 20px;
+    gap: 30px;
     justify-content: center;
+    overflow:hidden;
     .redes {
         grid-area: redes;
         text-align: center;
@@ -42,7 +43,7 @@
         word-spacing: 0.3pt;
         line-height: 1.4;
         padding: 5px;
-        padding: 25px;
+        padding: 15px;
     }
     .widget-2 {
         grid-area: widget-2;
@@ -51,7 +52,7 @@
         letter-spacing: 2pt;
         word-spacing: 0.3pt;
         line-height: 1.4;
-        padding: 25px;
+        padding: 15px;
     }
     .footer {
         grid-area: footer;
@@ -66,15 +67,14 @@
     }
         ul {
             margin: 0;
-            padding: 10px;
+            padding: 6px;
             list-style: none;
-            padding-right: 10px;
+            padding-right: 6px;
         }
             li {
                 display: inline-block;
                 line-height: 25px;
                 font-size: 18px;  
-                font-style: italic;
                 font-family: $typo-general;
                 }
                 a {
@@ -134,8 +134,8 @@ $vista: mobile;
     
     .widget-1 
     .widget-2 {
-        align-content:space-between;
+        align-content: space-between;
     }
     }
-    }
+ }
 }

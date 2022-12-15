@@ -8,7 +8,7 @@
   flex-wrap: wrap;
   list-style: none;
   margin: 10px;
-  padding: 0px; }
+  padding: 20px; }
   .cards .cards_item {
     display: flex;
     padding: 16px; }
@@ -29,7 +29,7 @@
   box-shadow: 6px 8px 2px 1px rgba(59, 21, 21, 0.336);
   display: flex;
   flex-direction: column;
-  overflow: hidden; }
+  overflow-x: hidden; }
   .card .card_content {
     padding: 16px;
     background: linear-gradient(to bottom left, #c05e5a 40%, #dda684 100%); }
@@ -59,12 +59,13 @@
 
 .container-grid {
   display: grid;
-  margin: 25px auto;
+  margin: 15px auto;
   grid-template-areas: "redes logo petfriendly" "navbar navbar navbar" "carrousel carrousel carrousel" "widget-1 main-content widget-2" "widget-1 main-content widget-2" "footer footer footer";
   grid-template-rows: auto auto auto;
   grid-template-columns: 20% auto 20%;
-  gap: 20px;
-  justify-content: center; }
+  gap: 30px;
+  justify-content: center;
+  overflow: hidden; }
   .container-grid .redes {
     grid-area: redes;
     text-align: center;
@@ -93,7 +94,7 @@
     word-spacing: 0.3pt;
     line-height: 1.4;
     padding: 5px;
-    padding: 25px; }
+    padding: 15px; }
   .container-grid .widget-2 {
     grid-area: widget-2;
     font-family: "Roboto", sans-serif;
@@ -101,7 +102,7 @@
     letter-spacing: 2pt;
     word-spacing: 0.3pt;
     line-height: 1.4;
-    padding: 25px; }
+    padding: 15px; }
   .container-grid .footer {
     grid-area: footer;
     background-color: #ffffff4f;
@@ -114,14 +115,13 @@
     line-height: 1.2; }
   .container-grid ul {
     margin: 0;
-    padding: 10px;
+    padding: 6px;
     list-style: none;
-    padding-right: 10px; }
+    padding-right: 6px; }
   .container-grid li {
     display: inline-block;
     line-height: 25px;
     font-size: 18px;
-    font-style: italic;
     font-family: "Roboto", sans-serif; }
   .container-grid a {
     display: block;
@@ -162,6 +162,9 @@
 .widget-2 {
       align-content: space-between; } }
 
+html {
+  overflow-x: hidden; }
+
 body {
   background-image: linear-gradient(#fff, #dda684);
   background-repeat: no-repeat;
@@ -183,7 +186,7 @@ body {
   color: #cc706d;
   font-size: 18px;
   letter-spacing: 3pt;
-  padding: 45px; }
+  padding: 15px; }
 
 .container-grid .carrousel {
   grid-area: carrousel;
@@ -200,7 +203,7 @@ body {
   letter-spacing: 2pt;
   word-spacing: 0.3pt;
   line-height: 1.4;
-  padding: 45px; }
+  padding: 15px; }
 
 .page-overflow.refurbished {
   padding-top: 15px;
