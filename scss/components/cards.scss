@@ -8,6 +8,7 @@
     .cards_item {
       display: flex;
       padding: 16px;
+      
     }
   }
   
@@ -18,13 +19,16 @@
   }
   
   @media (min-width: 896px) {
+    .cards {
+     width: 680px;
+    }
     .cards_item {
       width: 100%;
     }
   }
   
   .card {
-    background: linear-gradient(to bottom left, #c25f5b 40%, #da8aa7 100%);;
+    background: linear-gradient(to bottom left, #c05e5a 40%, #da8aa7 100%);;
     border-radius: 5px;
     box-shadow: 6px 8px 2px 1px rgba(59, 21, 21, 0.336);
     display: flex;
@@ -32,7 +36,7 @@
     overflow: hidden;
     .card_content {
       padding: 16px;
-      background: linear-gradient(to bottom left, #a0423f 40%, #dda684 100%);
+      background: linear-gradient(to bottom left, #c05e5a 40%, #dda684 100%);
     }
       .card_title {
         font-family: $typo-titles;
@@ -59,3 +63,9 @@ $vista: mobile;
             }
     }
 }
+
+.text-muted-mod {
+	color: black;
+  font-size: $typo-small;
+	text-shadow: 1px 1px 2px $dark;
+  }

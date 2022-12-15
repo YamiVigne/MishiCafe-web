@@ -9,7 +9,7 @@
 
     <!-- / keywords -->
     <meta name="description" content="Cafe de Especialidad petfriendly">
-    <meta name="keywords"  content="cafe, cafeteria, postres, meriendas, bebidas, petfriendly">
+    <meta name="keywords"  content="cafe, cafeteria, postres, meriendas, bebidas, petfriendly, sintacc">
 
     <!-- / bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -20,9 +20,8 @@
         crossorigin="anonymous"></script>
 
     <!-- / font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">   
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Roboto:wght@300&display=swap" rel="stylesheet"> 
 
     <!-- / libreria animaciones -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
@@ -43,57 +42,49 @@
         <!-- / barra navegación -->
         <div class="navbar"> 
           <nav class="navbar navbar-expand-lg bg-none">
-              <div class="container-fluid">
-                  <a class="navbar-brand" aria-current="page" title="Inicio" href="../index.html"> ☕💖🐈 </a>
-                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                          <span class="navbar-toggler-icon"></span>
-                      </button>
-                      <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                          <ul class="navbar-nav">
-                              <li class="nav-item">
-                                  <a class="nav-link" title="Merienda" href="./meriendas.html">MERIENDA</a>
-                              </li>
-                              <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" title="Bebidas" href="./pages/sintacc.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                BEBIDAS
-                                </a>
+              <a class="navbar-brand" title="Inicio" aria-current="page" href="../index.html"> ☕💖🐈 </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+
+                </button>
+                   <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                          <li class="nav-item">
+                            <a class="nav-link" title="Merienda" href="meriendas.html">MERIENDA</a>
+                          </li>
+                            <li class="nav-item dropdown">
+                              <a class="nav-link dropdown-toggle" title="Bebidas" href="sintacc.html" role="button" data-bs-toggle="dropdown" aria-expanded="false"> BEBIDAS </a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="./bebidascalientes.html">BEBIDAS CALIENTES</a></li>
-                                    <li><a class="dropdown-item" href="./bebidasfrias.html">BEBIDAS FRIAS</a></li>
+                                  <li><a class="dropdown-item" title="Bebidas Calientes" href="bebidascalientes.html">BEBIDAS CALIENTES</a> </li>
+                                  <li><a class="dropdown-item" title="Bebidas Frias" href="bebidasfrias.html">BEBIDAS FRIAS</a> </li>
                                 </ul>
                             </li>
-                              <li class="nav-item">
-                                  <a class="nav-link" title="Postres" href="./postres.html">POSTRES</a>
-                              </li>
-                              <li class="nav-item dropdown">
-                                  <a class="nav-link dropdown-toggle" title="Extra" href="./sintacc.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                  EXTRA
-                                  </a>
-                                  <ul class="dropdown-menu">
-                                      <li><a class="dropdown-item" href="./sintacc.html">SIN TACC</a></li>
-                                      <li><a class="dropdown-item" href="#">VEGANO</a></li>
-                                  </ul>
-                              </li>
-                              <li class="nav-item">
-                                <a class="nav-link" title="Contacto" href="./contacto.html">CONTACTO</a>
-                            </li>
-                          </ul>
+                                  <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" title="Postres" href="postres.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">POSTRES </a>
+                                      <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" title="Sin Tacc" href="sintacc.html">SIN TACC</a></li>
+                                      </ul>
+                                  </li>
+                                  <li class="nav-item">
+                                    <a class="nav-link" title="Contacto" href="contacto.html"> CONTACTO </a>
+                                  </li>
+                         </ul>
                       </div>
-              </div>
-            </nav>
+             </nav>
         </div>
         <!-- / carrousel -->
         <div class="carrousel"> 
+          <span class="barraHeader coloresHeader"></span>
             <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                <img src="../images/Carrousel 4.png" class="d-block w-100" alt="...">
+                <img src="../images/Carrousel 4.png" class="d-block w-100" title="Mishi Café" alt="...">
               </div>
               <div class="carousel-item">
-                <img src="../images/Carrousel 3.png" class="d-block w-100" alt="...">
+                <img src="../images/Carrousel 3.png" class="d-block w-100" title="Macarons..." alt="...">
               </div>
               <div class="carousel-item">
-                <img src="../images/Carrousel 2.png" class="d-block w-100" alt="...">
+                <img src="../images/Carrousel 2.png" class="d-block w-100" title="Café y muchos más..." alt="...">
               </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
@@ -104,10 +95,16 @@
               <span class="carousel-control-next-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Next</span>
             </button>
+              <span class="barraHeader coloresHeader"></span>
           </div> </div>
-        <div class="widget-1"> HOLA BATMAN 
-            <div data-aos="fade-right"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, exercitationem! Possimus laudantium obcaecati dolores nihil, voluptatibus officiis tempora nesciunt? At deserunt natus quisquam molestias ipsa repellat est quaerat exercitationem voluptatibus?</div>
-        </div>
+              <div class="widget-1"> ABIERTO LOS 7 DÍAS DE LA SEMANA PARA DESAYUNO, BRUNCH, ALMUERZO Y POSTRE <br>
+                  <div data-aos="fade-right"> 
+                    <h1> Comé lo mejor en Mishi Café.</h1></p>  
+                    <p>Trabajamos día a día para ofrecer un producto de altísima calidad, 
+                      intentando ser lo mas sustentables posibles y ofreciendo una carta dinámica que acompañe la propuesta</p>
+                  </div>
+                </div>
+              </div>
         <div class="main-content">
             <br>
                 <p><h2> Ofrecemos productos especiales para celiácos. Diferentes productos que te permiten disfrutar de algo rico y sin dificultades</h4></p>
@@ -115,87 +112,99 @@
                 <br> Podés elegir productos salados y dulces como pan lacteado, sandwichs, mini tartas de ganache de chocolate, cuadrados individuales, pepas de batata o membrillo y alfajores blanco, negro y de maicena.
                     Disfrutalos con una rica infusión en nuestro local en CABA 
             <br><br>
-                <p> <div> 
-                    <h3> Dulce </h3> 
-                    <ul id="dulcesintacc">
-                      <li> Alfajor de Maicena </li>
-                      <li> Alfajor Negro o Blanco </li>
-                      <li> Cuadraditos de Membrillo / Batata /Brownie / Coco y DDL </li>
-                      <li> Masas Secas 280gr </li>
-                      <li> Pepas 150 gr </li>
-                      <li> Alfajorcitos de chocolate 130 gr </li>
-                      <li> Galletas tipo lenguitas 130 gr </li>
-                      <li> Medialunas de Manteca </li>
-                      <li> Postre Balcarce </li>
-                      <li> Postre Brownie con Dulce de Leche </li>
-                      <li> Postre Cheesecake de Frutos Rojos </li>
-                      <li> Postre Chocotorta </li>
-                      <li> Postre Lemon Pie</li>
-                    </ul>
-                    </div>
-                    
-                <p> <div> 
-                    <h3> Salado </h3> 
-                    <ul id="saladosintacc">
-                      <li> Baguette </li>
-                      <li> Pan de molde lacteado (tipo Pan Lactal) 850 gr </li>
-                      <li> Pan de molde lacteado c/semillas (tipo Pan Lactal) 850 gr </li>
-                      <li> Pan para Hamburguesas </li>
-                      <li> Sandwiches de Miga (Jamón y Queso) </li>
-                    </ul>
-                    </div>
-            <a href="http://yamilita.com"><img src="../images/petfriendly.png" class="animate__animated animate__slideInUp" alt="Friends"></a> 
-
+            
+            <div class="container-fluid page-overflow page-margin-top refurbished">
+              <div class="container">
+                <div class="row row-mobile">
+                  <div class="col-xs-12 col-md-6 post-l">
+                    <img src="../images/merienda2.png" alt="Producto Refaccionado">
+                    <br><br><h2>DULCE</h2>
+                      <ul id="dulcesintacc">
+                          <li> Alfajor de Maicena </li>
+                          <li> Alfajor Negro o Blanco </li>
+                          <li> Cuadraditos de Membrillo / Batata /Brownie / Coco y DDL </li>
+                          <li> Masas Secas 280gr </li>
+                          <li> Pepas 150 gr </li>
+                          <li> Alfajorcitos de chocolate 130 gr </li>
+                          <li> Galletas tipo lenguitas 130 gr </li>
+                          <li> Medialunas de Manteca </li>
+                          <li> Postre Balcarce </li>
+                          <li> Postre Brownie con Dulce de Leche </li>
+                          <li> Postre Cheesecake de Frutos Rojos </li>
+                          <li> Postre Chocotorta </li>
+                          <li> Postre Lemon Pie</li>
+                        </ul>
+                  </div>
+                  <div class="col-xs-12 col-md-6 post-r">
+                    <img src="../images/merienda1.png" alt="Producto Refaccionado">
+                    <br><br><h2>SALADO</h2>
+                      
+                    <p>
+                      <ul id="saladosintacc">
+                        <li> Baguette </li>
+                        <li> Pan de molde lacteado (tipo Pan Lactal) 850 gr </li>
+                        <li> Pan de molde lacteado c/semillas (tipo Pan Lactal) 850 gr </li>
+                        <li> Pan para Hamburguesas </li>
+                        <li> Sandwiches de Miga (Jamón y Queso) </li>
+                      </ul></p>
+                  </div>
+                </div>
+              </div>
+            </div>
         </div>
-        <div class="widget-2"> HOLA ROBIN
-            <div data-aos="fade-left"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum quidem iusto ex qui possimus magni tempore dolore eveniet maxime tenetur earum enim esse magnam provident nostrum optio, dicta amet ipsum? 
-                <br> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste aut voluptatibus ad eius, aliquid dolor laudantium incidunt facilis accusantium fuga minus, perferendis consequatur fugiat! Officiis aspernatur sed assumenda mollitia quis.
-            </div> 
-        </div>
+        <div class="widget-2"> 
+          <h2> SIN GLUTEN </h2>
+            <div data-aos="fade-left">
+          <p> Pero nunca lo sabrías si no lo mencionamos ... </p> Pasteles y postres húmedos y suaves: todo lo que hacemos es un reflejo de nuestro compromiso con el sabor, la textura y el arte del más alto calibre. <br><br>
 
+          <b> <h2> 🍰TORTAS </h2> </b>
+            <br><br>
+            <img src="../images/tortas1.png" class="animate__animated animate__headShake" alt="Torta">
+            <br><br>
+            <img src="../images/tortas2.png" class="animate__animated animate__headShake" alt="Torta">
+            <br><br>
+        </div> 
+        </div> 
+        </div>
         <!-- / pie de pagina -->
         <div class="footer">
-            <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
-                <div class="col mb-3">
-                    <a href="/" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
-                      <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
-                    </a>
-                    <p class="text-muted">© 𝐃𝐞𝐫𝐞𝐜𝐡𝐨𝐬 𝐑𝐞𝐬𝐞𝐫𝐯𝐚𝐝𝐨𝐬 <p> 🌈 2022</p> 💖 by: <a href="http://yamilita.com">Yamila</a></p>
+          <span class="barraHeader coloresHeader"></span>
+            <footer class="row py-5">
+                <div class="col-12 col-lg-3 mb-3">
+                  <h2> MENÚ </h2>
+                    <ul class="nav flex-column">
+                      <li class="nav-item mb-2"><a href="meriendas.html" title="Meriendas" class="nav-link p-0 text-muted">Meriendas</a></li>
+                      <li class="nav-item mb-2"><a href="bebidasfrias.html" title="Bebidas Frias" class="nav-link p-0 text-muted">Bebidas Frias</a></li>
+                      <li class="nav-item mb-2"><a href="bebidascalientes.html" title="Bebidas Calientes" class="nav-link p-0 text-muted">Bebidas Calientes</a></li>
+                      <li class="nav-item mb-2"><a href="postres.html" title="Postres" class="nav-link p-0 text-muted">Postres</a></li>
+                    </ul>
                 </div>
               
-                <div class="col mb-3">
-              
-                </div>
-              
-                <div class="col mb-3">
-                    <h2>MENÚ</h2>
+                  <div class="col-12 col-lg-3 mb-3">
+                    <h2> SOBRE NOSOTROS </h2>
                     <ul class="nav flex-column">
-                      <li class="nav-item mb-2"><a href="./meriendas.html" class="nav-link p-0 text-muted">Meriendas</a></li>
-                      <li class="nav-item mb-2"><a href="./bebidasfrias.html" class="nav-link p-0 text-muted">Bebidas Frias</a></li>
-                      <li class="nav-item mb-2"><a href="./bebidascalientes.html" class="nav-link p-0 text-muted">Bebidas Calientes</a></li>
-                      <li class="nav-item mb-2"><a href="./postres.html" class="nav-link p-0 text-muted">Postres</a></li>
+                      <li class="nav-item mb-2"><a href="contacto.html" title="Ubicación" class="nav-link p-0 text-muted">Ubicacion y Horarios</a></li>
+                      <li class="nav-item mb-2"><a href="contacto.html" title="Contacto" class="nav-link p-0 text-muted">Contacto</a></li>
                     </ul>
                   </div>
-              
-                  <div class="col mb-3">
-                    <h2>SOBRE NOSOTROS</h2>
-                    <ul class="nav flex-column">
-                      <li class="nav-item mb-2"><a href="./contacto.html" class="nav-link p-0 text-muted">Ubicacion y Horarios</a></li>
-                      <li class="nav-item mb-2"><a href="./contacto.html" class="nav-link p-0 text-muted">Contacto</a></li>
-                    </ul>
-                  </div>
-              
-                  <div class="col mb-3">
-                    <h2>REDES</h2>
-                    <ul class="nav flex-column">
-                      <li class="nav-item mb-2"><a href="https://www.facebook.com" class="nav-link p-0 text-muted">Facebook</a></li>
-                      <li class="nav-item mb-2"><a href="https://www.instagram.com" class="nav-link p-0 text-muted">Instagram</a></li>
-                    </ul>
-                  </div>
+                    <div class="col-12 col-lg-3 mb-3">
+                      <h2> REDES </h2>
+                        <ul class="nav flex-column">
+                          <li class="nav-item mb-2"><a href="https://www.facebook.com" title="Facebook"  class="nav-link p-0 text-muted">Facebook</a></li>
+                          <li class="nav-item mb-2"><a href="https://www.instagram.com" title="Instagram" class="nav-link p-0 text-muted">Instagram</a></li>
+                        </ul>
+                    </div>
+                      <div class="col-12 col-lg-3 mb-3">
+                        <p class="text-muted">© 𝐃𝐞𝐫𝐞𝐜𝐡𝐨𝐬 𝐑𝐞𝐬𝐞𝐫𝐯𝐚𝐝𝐨𝐬 🌈 2022 <br> 💖 by: <a href="http://yamilita.com">Yamila</a> <br>
+                        <img src="https://www.gifsanimados.org/data/media/209/gato-imagen-animada-0184.gif" class="animate__animated animate__slideInUp" title="Miau" alt="Mishi Caminando">
+                        </p>
+                      </div>
             </footer>
-        </div>
+            <span class="barraHeader coloresHeader"></span>
+          </div>
     </section>
 </body>
+
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>
   AOS.init();

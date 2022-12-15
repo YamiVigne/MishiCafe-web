@@ -18,11 +18,13 @@
     width: 50%; } }
 
 @media (min-width: 896px) {
+  .cards {
+    width: 680px; }
   .cards_item {
     width: 100%; } }
 
 .card {
-  background: linear-gradient(to bottom left, #c25f5b 40%, #da8aa7 100%);
+  background: linear-gradient(to bottom left, #c05e5a 40%, #da8aa7 100%);
   border-radius: 5px;
   box-shadow: 6px 8px 2px 1px rgba(59, 21, 21, 0.336);
   display: flex;
@@ -30,9 +32,9 @@
   overflow: hidden; }
   .card .card_content {
     padding: 16px;
-    background: linear-gradient(to bottom left, #a0423f 40%, #dda684 100%); }
+    background: linear-gradient(to bottom left, #c05e5a 40%, #dda684 100%); }
   .card .card_title {
-    font-family: "EB Garamond", serif;
+    font-family: "Libre Baskerville", serif;
     color: #000;
     font-size: 28pt;
     letter-spacing: 2px;
@@ -50,8 +52,12 @@
     padding: 16px;
     background: linear-gradient(to bottom left, #c25f5b 40%, #da8aa7 100%); } }
 
+.text-muted-mod {
+  color: black;
+  font-size: 12pt;
+  text-shadow: 1px 1px 2px #000; }
+
 .container-grid {
-  max-width: 1366px;
   display: grid;
   margin: 25px auto;
   grid-template-areas: "redes logo petfriendly" "navbar navbar navbar" "carrousel carrousel carrousel" "widget-1 main-content widget-2" "widget-1 main-content widget-2" "footer footer footer";
@@ -66,43 +72,43 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: 'EB Garamond', serif;
+    font-family: "Libre Baskerville", serif;
     color: #594c7f;
     font-size: 18px;
     letter-spacing: 3pt; }
   .container-grid .navbar {
-    max-height: 70px;
+    max-height: 150px;
     grid-area: navbar;
     text-align: center;
     display: flex;
     align-items: initial;
     justify-content: center;
-    font-family: 'EB Garamond', serif;
+    font-family: "Libre Baskerville", serif;
     text-transform: uppercase;
-    letter-spacing: 3pt; }
+    letter-spacing: 5pt; }
   .container-grid .widget-1 {
     grid-area: widget-1;
-    font-family: "trebuchet MS", sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 12px;
     letter-spacing: 2pt;
     word-spacing: 0.3pt;
     line-height: 1.4;
     padding: 5px;
-    padding: 45px; }
+    padding: 25px; }
   .container-grid .widget-2 {
     grid-area: widget-2;
-    font-family: "trebuchet MS", sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 12px;
     letter-spacing: 2pt;
     word-spacing: 0.3pt;
     line-height: 1.4;
-    padding: 45px; }
+    padding: 25px; }
   .container-grid .footer {
     grid-area: footer;
     background-color: #ffffff4f;
     text-align: center;
     justify-content: center;
-    font-family: "trebuchet MS", sans-serif;
+    font-family: "Roboto", sans-serif;
     text-transform: uppercase;
     font-size: 18px;
     letter-spacing: 2pt;
@@ -117,7 +123,7 @@
     line-height: 25px;
     font-size: 18px;
     font-style: italic;
-    font-family: 'trebuchet MS', sans-serif; }
+    font-family: "Roboto", sans-serif; }
   .container-grid a {
     display: block;
     padding: 0px;
@@ -130,7 +136,6 @@
     display: grid;
     grid-template-areas: "logo logo logo" "carrousel carrousel carrousel" "navbar navbar navbar"  "main-content main-content main-content" "widget-1 widget-1 widget-1" "widget-2 widget-2 widget-2" "petfriendly petfriendly petfriendly" "footer footer footer"; }
     .container-grid .navbar {
-      flex-wrap: nowrap;
       text-align: inherit; }
     .container-grid ul {
       margin: 20px;
@@ -143,7 +148,7 @@
       text-align: center;
       font-size: 15px;
       font-style: italic;
-      font-family: 'trebuchet MS', sans-serif;
+      font-family: "Libre Baskerville", serif;
       text-transform: uppercase; }
     .container-grid a {
       display: block;
@@ -175,8 +180,7 @@ body {
   align-content: center;
   align-items: center;
   justify-content: center;
-  font-family: 'EB Garamond', serif;
-  text-transform: uppercase;
+  font-family: "Libre Baskerville", serif;
   color: #cc706d;
   font-size: 18px;
   letter-spacing: 3pt;
@@ -192,7 +196,7 @@ body {
   box-shadow: #81305641 1px 1px 5px;
   border-radius: 25px;
   text-align: center;
-  font-family: "trebuchet MS", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 12px;
   letter-spacing: 2pt;
   word-spacing: 0.3pt;
@@ -209,10 +213,10 @@ body {
   border: 10px solid #fff; }
 
 .refurbished .post-l {
-  background: #a0423f; }
+  background: #a0633f; }
 
 .refurbished .post-r {
-  background: #772712; }
+  background: #af5139; }
 
 .refurbished img {
   display: inline-block;
@@ -286,35 +290,35 @@ body {
 
 h1 {
   color: #a0423f;
-  font-family: "EB Garamond", serif;
+  font-family: "Libre Baskerville", serif;
   font-size: 28pt; }
 
 h2 {
   color: #000;
-  font-family: "EB Garamond", serif;
+  font-family: "Libre Baskerville", serif;
   text-align: center;
-  font-size: 20pt; }
+  font-size: 16pt; }
 
 h3 {
-  color: #a0423f;
-  font-family: "EB Garamond", serif;
-  font-size: 20pt;
+  color: #dda684;
+  font-family: "Libre Baskerville", serif;
+  font-size: 16pt;
   letter-spacing: 1.5pt; }
 
 h4 {
-  font-family: "EB Garamond", serif;
+  font-family: "Libre Baskerville", serif;
   color: #a0423f;
   letter-spacing: 1.5pt;
   text-align: start;
-  font-size: 20pt; }
+  font-size: 16pt; }
 
 h5 {
   color: #000;
   text-align: center;
-  font-family: "trebuchet MS", sans-serif; }
+  font-family: "Roboto", sans-serif; }
 
 h6 {
-  font-family: "trebuchet MS", sans-serif;
+  font-family: "Roboto", sans-serif;
   text-transform: uppercase;
   letter-spacing: 3pt;
   text-align: start;
@@ -330,3 +334,42 @@ h6 {
 @media only screen and (min-width: 992px) {
   p {
     font-size: 20px; } }
+
+.heart {
+  position: relative;
+  width: 35px;
+  height: 35px;
+  background-color: #d3809e;
+  transform: rotate(45deg) scale(1);
+  border-radius: 0 0 12px 0;
+  margin: 20px;
+  animation: pumpHeart 1500ms ease-in-out infinite; }
+
+.heart::before,
+.heart::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #d3809e; }
+
+.heart::before {
+  transform: translateY(-50%); }
+
+.heart::after {
+  transform: translateX(-50%); }
+
+@keyframes pumpHeart {
+  0% {
+    transform: rotate(45deg) scale(1); }
+  50% {
+    transform: rotate(45deg) scale(1); }
+  60% {
+    transform: rotate(45deg) scale(1.2); }
+  80% {
+    transform: rotate(45deg) scale(0.95); }
+  90% {
+    transform: rotate(45deg) scale(1); }
+  100% {
+    transform: rotate(45deg) scale(1); } }

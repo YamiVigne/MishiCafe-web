@@ -1,5 +1,4 @@
 .container-grid {
-    max-width: 1366px;
     display: grid;
     margin: 25px auto;
     grid-template-areas:
@@ -20,47 +19,47 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        font-family: 'EB Garamond', serif;
+        font-family: $typo-titles;
         color: #594c7f;
         font-size: 18px;
         letter-spacing: 3pt;
     }
     .navbar {
-        max-height: 70px;
+        max-height: 150px;
         grid-area: navbar;
         text-align: center;
         display: flex;
         align-items: initial;
         justify-content: center;
-        font-family: 'EB Garamond', serif;
+        font-family: $typo-titles;
         text-transform: uppercase;
-        letter-spacing: 3pt;
+        letter-spacing: 5pt;
     }
     .widget-1 {
         grid-area: widget-1;
-        font-family: "trebuchet MS", sans-serif;
+        font-family: $typo-general;
         font-size: 12px;
         letter-spacing: 2pt;
         word-spacing: 0.3pt;
         line-height: 1.4;
         padding: 5px;
-        padding: 45px;
+        padding: 25px;
     }
     .widget-2 {
         grid-area: widget-2;
-        font-family: "trebuchet MS", sans-serif;
+        font-family: $typo-general;
         font-size: 12px;
         letter-spacing: 2pt;
         word-spacing: 0.3pt;
         line-height: 1.4;
-        padding: 45px;
+        padding: 25px;
     }
     .footer {
         grid-area: footer;
         background-color: #ffffff4f;
         text-align: center;
         justify-content: center;
-        font-family: "trebuchet MS", sans-serif;
+        font-family: $typo-general;
         text-transform: uppercase;
         font-size: 18px;
         letter-spacing: 2pt;
@@ -77,7 +76,7 @@
                 line-height: 25px;
                 font-size: 18px;  
                 font-style: italic;
-                font-family: 'trebuchet MS', sans-serif;;
+                font-family: $typo-general;
                 }
                 a {
                     display: block;
@@ -103,7 +102,6 @@ $vista: mobile;
                                 "petfriendly petfriendly petfriendly"
                                 "footer footer footer";           
     .navbar {
-        flex-wrap: nowrap;
         text-align: inherit;
         }
          ul {
@@ -118,7 +116,7 @@ $vista: mobile;
                 text-align: center;
                 font-size: 15px;  
                 font-style: italic;
-                font-family: 'trebuchet MS', sans-serif;;
+                font-family: $typo-titles;
                 text-transform: uppercase;
             }
                 a {

@@ -17,8 +17,7 @@ body {
         align-content: center;
         align-items: center;
         justify-content: center;
-        font-family: 'EB Garamond', serif;
-        text-transform: uppercase;
+        font-family: $typo-titles;
         color: #cc706d;
         font-size: 18px;
         letter-spacing: 3pt;
@@ -34,7 +33,7 @@ body {
         box-shadow: #81305641 1px 1px 5px;
         border-radius: 25px;
         text-align: center;
-        font-family: "trebuchet MS", sans-serif;
+        font-family: $typo-general;
         font-size: 12px;
         letter-spacing: 2pt;
         word-spacing: 0.3pt;
@@ -54,10 +53,10 @@ body {
   }
   
   .refurbished .post-l{
-    background:#a0423f
+    background:#a0633f
   }
   .refurbished .post-r{
-    background:#772712;
+    background:#af5139;
   }
   .refurbished img{
     display:inline-block;
